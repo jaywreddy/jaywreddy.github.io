@@ -1,25 +1,24 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Jay's Site 
-email: jay.w.reddy@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A site to document any work that I would like to make public, and to show off
-  cool static site generation using Pandoc/Jekyll. 
+title: My Stuff
+name: Jay Reddy # your name
+email: jay.w.reddy@gmail.com # your email address
+description: >
+    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  jaywreddy
-# Plugins
+url: "https://jaywreddy.github.io" # the base hostname & protocol for your site
+github_username: jaywreddy # your Github username
+
+google-analytics:  # add it if you have one
+
+skillstree: false # turn on or off the skills tree in about page
+
+# imports 
 gems:
   - jekyll-pandoc
+# Build settings
+permalink: none
+markdown: pandoc
 pandoc:
   extensions:
-    -mathjax
-
-# Build settings
-markdown: pandoc 
+    - smart
+    - mathjax

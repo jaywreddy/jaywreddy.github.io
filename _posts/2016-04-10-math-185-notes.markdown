@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Math 185 Notes - SP 2016"
+date:   2016-04-10 15:40:31 -0700
+categories: jekyll update
+---
+
 Math 185 Notes - SP 2016
 ==============
 Jay Reddy
