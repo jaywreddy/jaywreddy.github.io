@@ -45,7 +45,7 @@ $$\begin{cases}
   \end{cases}
  $$
 
-![polar](/imgcache/polar.png)
+![polar](/imgcache/polar.png){: width="100%"}
 
 Arg $$z$$: Principle values, $$\theta \in \{-\pi, \pi\}$$
 
@@ -70,7 +70,7 @@ Stereographic Projection: map from $$\mathbb{R}^3$$ unit sphere to $$\mathbb{C}^
 
 * $$N = (0,0,1)$$, and we draw a line to $$P$$, a point on the unit circle. $$z$$ is intersection of line and coordinate plane. $$P=N \rightarrow \infty$$
 
-![stereographic projection](/imgcache/stereographic.png)
+![stereographic projection](/imgcache/stereographic.png){: width="100%"}
 
 Coordinate transformations:
 $$\begin{cases}
@@ -121,7 +121,7 @@ To solve this problem, we draw a branch cut between the positive and negative va
 
 The positive one of these values is defined as the principle branch.
 
-![Square Root Branches](/imgcache/sqrtbranches.png)
+![Square Root Branches](/imgcache/sqrtbranches.png){: width="100%"}
 
 ### Riemann surface
 Thinking of the two branch cuts as surfaces, we can glue them together over $$w$$ to get a 3D surface where each side represents the value of $$z$$ corresponding to each branch.
