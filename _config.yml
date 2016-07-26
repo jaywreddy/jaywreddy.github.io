@@ -17,9 +17,4 @@ gems:
   - jekyll-pandoc
 # Build settings
 permalink: none
-markdown: Pandoc
-pandoc:
-  extensions:
-    - normalize
-#    - smart
-    - mathjax
+markdown: kramdown
