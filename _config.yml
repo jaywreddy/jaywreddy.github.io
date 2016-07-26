@@ -1,24 +1,25 @@
 # Site settings
-title: My Stuff
-name: Jay Reddy # your name
-email: jay.w.reddy@gmail.com # your email address
-description: >
-    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jaywreddy.github.io" # the base hostname & protocol for your site
-github_username: jaywreddy # your Github username
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
 
-google-analytics:  # add it if you have one
-
-skillstree: false # turn on or off the skills tree in about page
+encoding: utf-8
 
 # imports 
 gems:
   - jekyll-pandoc
 # Build settings
 permalink: none
-markdown: pandoc
+markdown: Pandoc
 pandoc:
   extensions:
-    - smart
+    - normalize
+#    - smart
     - mathjax
