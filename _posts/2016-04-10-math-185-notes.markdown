@@ -1,13 +1,9 @@
 ---
 layout: post
-title:  "Math 185 Notes - SP 2016"
+title:  "Complex Analysis Notes - Math 185"
 date:   2016-04-10 15:40:31 -0700
-categories: jekyll update
+category: "Math185"
 ---
-
-Math 185 Notes - SP 2016
-==============
-Jay Reddy
 
 # Chapter 1: The Complex Plane and Elementary Functions
 
@@ -357,7 +353,7 @@ This follows from the chain rule.
 A function is conformal if it preserves angles.
 
 I.E. A function $$g(z)$$ is conformal at $$z_0$$ if whenever $$\gamma_0,\gamma_1$$ are curves terminating at $$z_0$$ with nonzero tangents, then $$g \circ \gamma_1, g\circ \gamma_2$$ have nonzero tangents at $$g(z_0)$$ and the angle from $$(g\circ \gamma_0)'(z_0)$$ to
-$$(g \circ \gamma_1)'(z_0)$$ is the same as from $$\gamma'_0(z_0)$$ to $$\gamma'_1(z_0)$$.
+$$(g \circ \gamma_1)'(z_0)$$ is the same as from $$\gamma' _ 0 (z_0) $$ to $$\gamma'_ 1(z_0)$$.
 
 A conformal mapping of domain $$D$$ onto $$V$$ is a continuously differentiable function that is conformal at each point of $$D$$ and that maps $$D$$ one-to-one onto $$V$$.
 
@@ -990,7 +986,7 @@ $$P(z) = b_N z^N + B_{N-1}z^{N-1} + \cdots + b_1 z + b_0 $$
 ## 6.4 - Partial Fractions Decomposition
 
 ### Meromorphic functions on extended complex plane
-A meromorphic function on the extended complex plane $$\mathbb{C}^*$$ is rational.
+A meromorphic function on the extended complex plane $$\mathbb{C}^* $$ is rational.
 
 Note: meromorphic functions can only have a finite number of poles.
 
