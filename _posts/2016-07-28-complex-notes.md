@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Complex Analysis Notes - Math 185"
-date:   2016-04-10 15:40:31 -0700
-category: "Math185"
+title:  "Complex Analysis Notes"
+category: "Complex Analysis"
 ---
 
 # Chapter 1: The Complex Plane and Elementary Functions
@@ -12,12 +11,12 @@ category: "Math185"
 Complex Number: $$z = x + iy$$
 
 * $$(x + iy) + (u + vi) = (x+u) + (y+v)i$$
-* $$\vert z\vert  = \sqrt{x^2 + y^2}$$ 
-* Triangle Inequal: $$\vert z+w\vert  \leq \vert z\vert  + \vert w\vert , \qquad  z,w \in  \mathbb{C}$$
+* $$\vert  z\vert   = \sqrt{x^2 + y^2}$$ 
+* Triangle Inequal: $$\vert  z+w\vert   \leq \vert  z\vert   + \vert  w\vert  , \qquad  z,w \in  \mathbb{C}$$
 * Multiplication through distributive property
 * Multiplicative Inverse: $$\frac{1}{z} = \frac{x-iy}{x^2 + y^2}$$
 * Complex conjugate: $$\bar{z} = x - iy$$
-* $$\frac{1}{z} = \frac{\bar{z}}{\vert z\vert ^2}$$
+* $$\frac{1}{z} = \frac{\bar{z}}{\vert  z\vert  ^2}$$
 * $$\text{Re } z = (z + \bar{z})/2x$$
 * $$\text{Im } z = (z - \bar{z})/2i$$
 
@@ -41,14 +40,14 @@ $$\begin{cases}
   \end{cases}
  $$
 
-![polar](/imgcache/polar.png)
+![polar](/images/complex_analysis/notes/polar.png)
 
 Arg $$z$$: Principle values, $$\theta \in \{-\pi, \pi\}$$
 
 $$e^{i \theta} = \text{cos } \theta + i \text{ sin } \theta$$
 
 ### Useful Identities:
-$$\vert e^{i \theta}\vert  = 1 $$
+$$\vert  e^{i \theta}\vert   = 1 $$
 $$\overline{e^{i \theta}} = e^{-i \theta}$$
 $$ \frac{1}{e^{i \theta}} = e^{-i \theta}$$
 $$ e^{i(\theta + \varphi)} = e^{i \theta}e^{i \varphi} $$
@@ -66,7 +65,7 @@ Stereographic Projection: map from $$\mathbb{R}^3$$ unit sphere to $$\mathbb{C}^
 
 * $$N = (0,0,1)$$, and we draw a line to $$P$$, a point on the unit circle. $$z$$ is intersection of line and coordinate plane. $$P=N \rightarrow \infty$$
 
-![stereographic projection](/imgcache/stereographic.png)
+![stereographic projection](/images/complex_analysis/notes/stereographic.png)
 
 Coordinate transformations:
 $$\begin{cases}
@@ -75,9 +74,9 @@ $$\begin{cases}
   \end{cases}$$
 
 $$ \begin{cases}
-   X = 2x/(\vert z\vert ^2 +1) \\
-   Y = 2y/(\vert z\vert ^2 +1) \\
-   Z = (\vert z\vert ^2 -1)/(\vert z\vert ^2 +1)
+   X = 2x/(\vert  z\vert  ^2 +1) \\
+   Y = 2y/(\vert  z\vert  ^2 +1) \\
+   Z = (\vert  z\vert  ^2 -1)/(\vert  z\vert  ^2 +1)
    \end{cases}$$
 
 Circles on the sphere correspond to circles or straight lines in the plane: longitudinal:straight, latitudinal:circle
@@ -100,7 +99,7 @@ We can consider any path in $$z$$, and plot the result in $$w$$.
 ### The Square Function
 $$ w = z^2 $$
 
-$$\vert w\vert  = \vert z\vert ^2$$
+$$\vert  w\vert   = \vert  z\vert  ^2$$
 
 $$\text{arg}(w) = 2\text{arg}(z) $$
 
@@ -117,7 +116,7 @@ To solve this problem, we draw a branch cut between the positive and negative va
 
 The positive one of these values is defined as the principle branch.
 
-![Square Root Branches](/imgcache/sqrtbranches.png)
+![Square Root Branches](/images/complex_analysis/notes/sqrtbranches.png)
 
 ### Riemann surface
 Thinking of the two branch cuts as surfaces, we can glue them together over $$w$$ to get a 3D surface where each side represents the value of $$z$$ corresponding to each branch.
@@ -134,7 +133,7 @@ equivalently,
 $$e^z = e^x e^{iy}, \qquad z = x+iy$$
 
 These identities correspond to the polar representation of $$e^x$$
-$$ \vert e^z\vert  = e^x$$
+$$ \vert  e^z\vert   = e^x$$
 
 $$ \text{arg}(e^z) = y $$
 
@@ -142,11 +141,11 @@ Note: remember that the exponential is $$2\pi$$-periodic
 
 ## 1.6 The Logarithm Function
 
-$$ \text{log} z = \text{log} \vert z\vert  + i \text{arg} z $$
+$$ \text{log} z = \text{log} \vert  z\vert   + i \text{arg} z $$
 
 Note, $$e^x$$ is $$2\pi$$-periodic, so many args will map to the same value. To solve this, we use Arg, definied to be $$-\pi<\theta\leq \pi$$:
 
-$$\text{log} z = \text{log} \vert z\vert  + i \text{Arg}(z+2\pi i m) \qquad m=0,\pm1,\pm2,\cdots$$
+$$\text{log} z = \text{log} \vert  z\vert   + i \text{Arg}(z+2\pi i m) \qquad m=0,\pm1,\pm2,\cdots$$
 
 This forms the principle value of log.
 
@@ -168,7 +167,7 @@ Riemman Surface of log forms a spiral ribbon
 
 ### Sequence Convergence
 
-A sequence of complex numbers $$\{s_n\}$$ converges to $$s$$ if for any $$\epsilon > 0$$, there is an integer $$N \geq 1$$ such that $$\vert s_n -s\vert  < \epsilon$$ for all $$n \geq N$$.
+A sequence of complex numbers $$\{s_n\}$$ converges to $$s$$ if for any $$\epsilon > 0$$, there is an integer $$N \geq 1$$ such that $$\vert  s_n -s\vert   < \epsilon$$ for all $$n \geq N$$.
 Written $$s_n \to s$$
 
 ### Properties of Limits
@@ -183,7 +182,7 @@ If $$r_n \leq s_n \leq t_n$$, and $$r_n \to L,$$ and $$t_n \to L$$, $$s_n \to L$
 A sequence of complex numbers converges iff the corresponding sequences of real and imaginary parts converge.
 
 ### Cauchy Sequence:
-$$\vert s_n - s_m\vert  \to 0$$ as $$n,m \to \infty$$
+$$\vert  s_n - s_m\vert   \to 0$$ as $$n,m \to \infty$$
 
 #### Complex sequences converge iff it is a cauchy sequence.
 
@@ -195,7 +194,7 @@ $$f(z) \to L$$ if $$f(z_n) \to L$$ for any sequence $$z_n \to z_0$$
 
 ### Closed/Open Sets
 For open sets, any $$z\in U$$ has disk around it in $$U$$.
-i.e.: $$\vert z-z_0\vert <p$$ is open, $$\vert z-z_0\vert  \leq p$$ is closed
+i.e.: $$\vert  z-z_0\vert  <p$$ is open, $$\vert  z-z_0\vert   \leq p$$ is closed
 
 Closed sets contain the limit of any sequence in the set.
 
@@ -284,13 +283,13 @@ $$
 
 With determinant:
 
-$$\text{det} J_f = (\frac{\partial u}{\partial x})^2 + (\frac{\partial v}{}\partial x)^2 = \Big\vert  \frac{\partial u}{\partial x} + i \frac{\partial v }{\partial x}\Big\vert ^2$$
+$$\text{det} J_f = (\frac{\partial u}{\partial x})^2 + (\frac{\partial v}{}\partial x)^2 = \Big\vert   \frac{\partial u}{\partial x} + i \frac{\partial v }{\partial x}\Big\vert  ^2$$
 
 Thus,
 
 ### Jacobian of Analytic Function
 
-$$\text{det} J_f = \vert f'(z)\vert ^2 $$
+$$\text{det} J_f = \vert  f'(z)\vert  ^2 $$
 
 ### Inverse of Analytic Function
 Suppose $$f(z)$$ is analytic on a domain $$D$$, $$z_0 \in D$$, and $$f'(z_0) \neq 0$$. Then there is a small disk $$U \subset D$$ containing $$z_0$$ such that $$f(z)$$ is one-to-one on $$U$$, the image $$V=f(U)$$ of $$U$$ is open, and the inverse function
@@ -364,7 +363,7 @@ If $$f(z)$$ is analytic at $$(z_0)$$ and $$f'(z_0) \neq 0$$, then $$f(z)$$ is co
 
 ### Def of Fractional Linear Transformation
 
-A fractional linear transformation (also called Möbius transformations) is a function of the form
+A fractional linear transformation (also called Mobius transformations) is a function of the form
 
 $$w = f(z) = \frac{az+b}{cz+e}, $$
 
@@ -419,7 +418,7 @@ $$z = e^{i 2 \pi k/ n}\qquad k= 0,1,\cdots n-1 $$
 
 
 ### C is a metric space
-Triangle ineq: $$\vert w+z\vert  \leq \vert z\vert  + \vert w\vert $$
+Triangle ineq: $$\vert  w+z\vert   \leq \vert  z\vert   + \vert  w\vert  $$
 
 ### The Riemann sphere
 
@@ -453,7 +452,7 @@ Smooth path: Has form $$\gamma(t)= (x(t),y(t)$$, which have defined derivatives.
 If $$\gamma(t), a \leq t \leq b$$, is a path from $$A$$ to $$B$$, and $$\phi(s), \alpha \leq s \leq \beta$$ is a strictly increasing continuous function with $$\phi(\alpha)= a, \phi(\beta)= b$$, then $$(\gamma \dot \phi)$$ is also a path from A to B, a reparameterization of $$\gamma$$.
 
 ### Line Integral:
-$$\int_gamma Pdx + Qdy = \int_a^b P(x(t),y(t))\frac{dx}{dt}dt + \int_a^b Q(x(t),y(t))\frac{dy}{dt}dt$$
+$$\int_\gamma Pdx + Qdy = \int_a^b P(x(t),y(t))\frac{dx}{dt}dt + \int_a^b Q(x(t),y(t))\frac{dy}{dt}dt$$
 
 Note that the line integral over $$\gamma$$ is independent of its parameterization.
 
@@ -535,13 +534,13 @@ Rederivation of the harmonic conjugate.
 ## 3.4 - The Mean Value Property
 
 ### Average Value:
-Average value on a circle $$\vert z-z_0\vert =r$$ of a continuous real-valued function on a domain $$D$$ is defined:
+Average value on a circle $$\vert  z-z_0\vert  =r$$ of a continuous real-valued function on a domain $$D$$ is defined:
 $$ A(r) = \int_0^{2\pi} h(z_0 + re^{i \theta})\frac{d \theta}{2\pi}$$
 
 ### Average Value for Harmonic Functions
 On harmonic functions, the average value of the boundary circle of any disk is the value of the center point.
 
-If $$u(z)$$ is a harmonic function on a domain $$D$$, and if the disk $$\vert z-z_0\vert <p$$ is contained in D, then:
+If $$u(z)$$ is a harmonic function on a domain $$D$$, and if the disk $$\vert  z-z_0\vert  <p$$ is contained in D, then:
 
 $$u(z_0) = \int_0^{2\pi} u(z_0 + re^{i\theta}\frac{d\theta}{2\pi}), \qquad 0 < r <p $$
 
@@ -556,10 +555,10 @@ Let $$u(z)$$ be a real-valued harmonic function on a domain $$D$$ such that $$u(
 A complex valued function is harmonic if its real and imaginary parts are harmonic. Any analytic function is harmonic.
 
 ### Strict Maximum Principle (Complex Version)
-Let $$h$$ be a boudned complex-valued harmonic function on a domain $$D$$. if $$\vert h(z)\vert  \leq M$$ for all $$z \in D$$, and $$\vert h(z_0)\vert =M$$ for some $$z_0 \in D$$, then $$h(z)$$ is constant on $$D$$.
+Let $$h$$ be a boudned complex-valued harmonic function on a domain $$D$$. if $$\vert  h(z)\vert   \leq M$$ for all $$z \in D$$, and $$\vert  h(z_0)\vert  =M$$ for some $$z_0 \in D$$, then $$h(z)$$ is constant on $$D$$.
 
 ## Maximum Principle
-Let $$h(z)$$ be a complex-valued harmonic function on a bounded domain $$D$$ such that $$h(z)$$ extends continuously to the boundary $$\partial D$$ of $$D$$. If $$\vert h(z)\vert \leq M$$ for all $$z\in \partial D$$, then $$\vert h(z)\vert  \leq M$$ for all $$z \in D$$.
+Let $$h(z)$$ be a complex-valued harmonic function on a bounded domain $$D$$ such that $$h(z)$$ extends continuously to the boundary $$\partial D$$ of $$D$$. If $$\vert  h(z)\vert  \leq M$$ for all $$z\in \partial D$$, then $$\vert  h(z)\vert   \leq M$$ for all $$z \in D$$.
 
 # Chapter 4: Complex Integration and Analyticity
 
@@ -575,11 +574,11 @@ $$\int_\gamma h(z) dz = \int_\gamma h(z) dx + u \int_\gamma h(z) dy $$
 ### ML-Estimate
 Suppose $$\gamma$$ is a piecewise smooth curve. If $$h(z)$$ is a continuous function on $$\gamma$$, then
 
-$$\Bigg\vert  \int_\gamma h(z)dz\Bigg\vert  \leq \int_\gamma \vert h(z)\vert \vert dz\vert  $$
+$$\Bigg\vert   \int_\gamma h(z)dz\Bigg\vert   \leq \int_\gamma \vert  h(z)\vert  \vert  dz\vert   $$
 
-Further, if $$\gamma$$ has length $$L$$, and $$\vert h(z)\vert \leq M$$ on $$\gamma$$, then
+Further, if $$\gamma$$ has length $$L$$, and $$\vert  h(z)\vert  \leq M$$ on $$\gamma$$, then
 
-$$\Bigg\vert  \int_\gamma h(z) dz \Bigg\vert  \leq ML $$
+$$\Bigg\vert   \int_\gamma h(z) dz \Bigg\vert   \leq ML $$
 
 A sharp estimate is an $$ML$$ estimate where equality holds.
 
@@ -643,9 +642,9 @@ If $$f(z)$$ is analytic on domain $$D$$, then $$f(z)$$ is infinitely differentia
 ## 4.5 - Liouville's Theorem
 
 ### Cauchy Estimates
-Suppose $$f(z)$$ is analytic for $$\vert z-z_0\vert \leq p$$. If $$\vert f(z)\vert  \leq M$$ for $$\vert z-z_0\vert =p$$, then
+Suppose $$f(z)$$ is analytic for $$\vert  z-z_0\vert  \leq p$$. If $$\vert  f(z)\vert   \leq M$$ for $$\vert  z-z_0\vert  =p$$, then
 
-$$\Big\vert  f^{(m)}(z_0)\Big\vert  \leq \frac{m!}{p^m}M, \qquad m \geq 0 $$
+$$\Big\vert   f^{(m)}(z_0)\Big\vert   \leq \frac{m!}{p^m}M, \qquad m \geq 0 $$
 
 ### Liouville's Theorem
 Let $$f(z)$$ be an analytic function on the complex plane. If $$f(z)$$ is bounded, then $$f(z)$$ is constant.
@@ -679,13 +678,13 @@ If $$0 \leq a_k \leq r_k$$, and if $$\sum r_k$$ converges, then $$\sum a_k$$ con
 If $$\sum a_k$$ converges, then $$a_k \to 0$$ as $$k \to \infty$$
 
 #### Geometric Series
-$$\sum_{k=0}^\infty z^k = \frac{1}{1-z}, \qquad \vert z\vert <1 $$
+$$\sum_{k=0}^\infty z^k = \frac{1}{1-z}, \qquad \vert  z\vert  <1 $$
 
 ### Absolute Convergence
 
 If $$\sum a_k$$ converges absolutely, then $$\sum a_k$$ converges, and
 
-$$ \vert \sum_{k=0}^\infty a_k \vert  \leq \sum_{k=0}^\infty \vert a_k\vert $$
+$$ \vert  \sum_{k=0}^\infty a_k \vert   \leq \sum_{k=0}^\infty \vert  a_k\vert  $$
 
 ## 5.2 - Sequences and Series of Functions
 
@@ -697,9 +696,9 @@ $$\{f_j\}$$ converges pointwise on $$E$$ if for every $$x \in E$$ the sequence o
 
 ### Uniform Convergence
 
-Sequence $$\{f_j\}$$ converges uniformly to $$f$$ on $$E$$ if $$\vert f_j(x) -f(x)\vert  \leq \epsilon_j$$ for all $$x \in E$$, where $$\epsilon_j \to 0$$ as $$j \to \infty$$. $$\epsilon_j$$ is a worst-case estimator: i.e.
+Sequence $$\{f_j\}$$ converges uniformly to $$f$$ on $$E$$ if $$\vert  f_j(x) -f(x)\vert   \leq \epsilon_j$$ for all $$x \in E$$, where $$\epsilon_j \to 0$$ as $$j \to \infty$$. $$\epsilon_j$$ is a worst-case estimator: i.e.
 
-$$e_j = \text{sup}\ (x \in E)\ \vert f_j(x) - f(x)\vert $$
+$$e_j = \text{sup}\ (x \in E)\ \vert  f_j(x) - f(x)\vert  $$
 
 Uniform Convergence implies pointwise convergence
 
@@ -724,7 +723,7 @@ The series converges uniformly if the sequence of partial sums converges uniform
 
 ### Weierstrass M-Test
 
-Suppose $$M_k \geq 0$$ and $$\sum M_k$$ converges. If $$g_k(x)$$ are complex-valued functions on a set $$E$$ such that $$\vert g_k(x)\vert  \leq M_k$$ for all $$x \in E$$, then $$\sum g_k(x)$$ converges uniformly on $$E$$.
+Suppose $$M_k \geq 0$$ and $$\sum M_k$$ converges. If $$g_k(x)$$ are complex-valued functions on a set $$E$$ such that $$\vert  g_k(x)\vert   \leq M_k$$ for all $$x \in E$$, then $$\sum g_k(x)$$ converges uniformly on $$E$$.
 
 ### Analytic Limits
 
@@ -732,7 +731,7 @@ If $$\{f_k(z) \}$$ is a sequence of analytics functions on a domain $$D$$ that c
 
 ### Convergence of Derivatives
 
-Suppose that $$f_k(z)$$ is analytic for $$\vert z - z_0\vert  \leq R$$, and suppose that the sequence $$\{f_k(z)\}$$ converges uniformly to $$f(z)$$ for $$\vert z-z_0\vert  \leq R$$. Then for each $$r < R$$ and for each $$m \geq 1$$, the sequence of mth derivatives $$\{f_k^{(m)}(z)\}$$ converges uniformly to $$f^{(m)}(z)$$ for $$\vert z-z_0\vert  \leq r$$.
+Suppose that $$f_k(z)$$ is analytic for $$\vert  z - z_0\vert   \leq R$$, and suppose that the sequence $$\{f_k(z)\}$$ converges uniformly to $$f(z)$$ for $$\vert  z-z_0\vert   \leq R$$. Then for each $$r < R$$ and for each $$m \geq 1$$, the sequence of mth derivatives $$\{f_k^{(m)}(z)\}$$ converges uniformly to $$f^{(m)}(z)$$ for $$\vert  z-z_0\vert   \leq r$$.
 
 ### Normal Convergence
 
@@ -749,7 +748,7 @@ Suppose that $$\{f_k(z)\}$$ is a sequence of analytic functions on a domain $$D$
 A power series (centered at $$z_0$$) is a series of the form $$\sum_{k=0}^\infty a_k (z - z_0)^k$$.
 
 ### Convergence of Power Series
-Let $$\sum_k a_k z^k$$ be a power series. Then there is $$R$$, $$0 \leq R \leq +\infty$$, such that $$\sum a_k z^k$$ converges absolutely if $$\vert z\vert < R$$, and $$\sum a_k z^k$$ does not converge if $$\vert z\vert > R$$. For each fixed $$r$$ satisfying $$r < R$$, the series $$\sum a_k z^k$$ converges uniformly for $$\vert z\vert \leq r$$.
+Let $$\sum_k a_k z^k$$ be a power series. Then there is $$R$$, $$0 \leq R \leq +\infty$$, such that $$\sum a_k z^k$$ converges absolutely if $$\vert  z\vert  < R$$, and $$\sum a_k z^k$$ does not converge if $$\vert  z\vert  > R$$. For each fixed $$r$$ satisfying $$r < R$$, the series $$\sum a_k z^k$$ converges uniformly for $$\vert  z\vert  \leq r$$.
 
 R - Radius of Convergence. Depends only on tail of series. I.E. remains the same after altering a finite number of terms
 
@@ -757,11 +756,15 @@ R - Radius of Convergence. Depends only on tail of series. I.E. remains the same
 
 Suppose $$\sum a_k z^k$$ is a power series with radius of convergence $$R > 0$$. Then the function  
 
-$$ f(z) = \sum_{k=0}^\infty a_k z^k, \qquad \vert z\vert < R$$
+$$ f(z) = \sum_{k=0}^\infty a_k z^k, \qquad \vert  z\vert  < R$$
 
 is analytic. The derivatives of $$f(z)$$ are obtained by differentiating the series term by term,
 
-$$f'(z) = \sum_{k=1}^\infty k a_k z^{k-1}, \qquad f''(z) = \sum_{k=2}^\infty k(k-1)a_k z^{k-2}, \qquad \vert z\vert <R $$
+$$ f'(z) = \sum_{k=1}^\infty k a_k z^{k-1}, $$
+
+$$ f''(z) = \sum_{k=2}^\infty k(k-1)a_k z^{k-2}, $$
+
+$$ \vert  z\vert  <R $$
 
 and similarly for the higher-order derivatives. The coefficients of the series are given by
 
@@ -770,29 +773,29 @@ $$ a_k = \frac{1}{k!}f^{(k)}(0), \qquad k \geq 0$$
 The radius of convergence can be determined from the coefficients.
 
 ### Ratio Test
-If $$\vert a_k/a_{k+1}\vert $$ has a limit as $$k \to \infty$$, either finite or $$+ \infty$$, then the limit is the radius of convergence $$R$$ of $$\sum a_k z^k$$,
+If $$\vert  a_k/a_{k+1}\vert  $$ has a limit as $$k \to \infty$$, either finite or $$+ \infty$$, then the limit is the radius of convergence $$R$$ of $$\sum a_k z^k$$,
 
-$$R = \lim\limits_{k \to \infty} \vert \frac{a_k}{a_{k+1}}\vert $$
+$$R = \lim\limits_{k \to \infty} \vert  \frac{a_k}{a_{k+1}}\vert  $$
 
 ### Root Test
-If $$\sqrt[k]{\vert a_k\vert }$$ has a limit as $$k \to \infty$$, either finite or $$+ \infty$$, then the radius of convergence of $$\sum a_k z^k$$ is given by
+If $$\sqrt[k]{\vert  a_k\vert  }$$ has a limit as $$k \to \infty$$, either finite or $$+ \infty$$, then the radius of convergence of $$\sum a_k z^k$$ is given by
 
-$$ R = \frac{1}{\lim \sqrt[k]{\vert a_k\vert }}$$
+$$ R = \frac{1}{\lim \sqrt[k]{\vert  a_k\vert  }}$$
 
 
 ### Cauchy-Hadamard formula
 gives radius of convergence of any power series
 
-$$ R = \frac{1}{\text{lim sup} \sqrt[k]{\vert a_k\vert }}$$
+$$ R = \frac{1}{\text{lim sup} \sqrt[k]{\vert  a_k\vert  }}$$
 
 
 ## 5.4 - Power Series Expansion of an Analytic Function
 
 ### Expansion of Analytic Functions
 
-Suppose that $$f(z)$$ is analytic for $$\vert z-z_0\vert  < p$$. Then $$f(z)$$ is represented by the the power series
+Suppose that $$f(z)$$ is analytic for $$\vert  z-z_0\vert   < p$$. Then $$f(z)$$ is represented by the the power series
 
-$$f(z) = \sum_{k=0}^\infty a_k(z-z_0)^k, \qquad \vert z-z_0\vert  < p$$
+$$f(z) = \sum_{k=0}^\infty a_k(z-z_0)^k, \qquad \vert  z-z_0\vert   < p$$
 
 where
 
@@ -800,18 +803,18 @@ $$a_k = \frac{f^{(k)}(z_0)}{k!}, \qquad k \geq 0$$
 
 and where the power series has radius of convergence $$R \geq p$$. For any fixed $$r$$, $$0 < r < p$$, we have
 
-$$a_k = \frac{1}{2 \pi i} \oint_{\vert \varsigma - z_0\vert =r} \frac{f(\varsigma)}{(\varsigma - z_0)^{k+1}}d\varsigma$$
+$$a_k = \frac{1}{2 \pi i} \oint_{\vert  \varsigma - z_0\vert  =r} \frac{f(\varsigma)}{(\varsigma - z_0)^{k+1}}d\varsigma$$
 
-Further, if $$\vert f(z)\vert  \leq M$$ for $$\vert z-z_0\vert =r$$, then
-$$\vert a_k\vert  \leq \frac{M}{r^k}, \qquad k \geq 0 $$
+Further, if $$\vert  f(z)\vert   \leq M$$ for $$\vert  z-z_0\vert  =r$$, then
+$$\vert  a_k\vert   \leq \frac{M}{r^k}, \qquad k \geq 0 $$
 
 
 ### Analytic Function Determined by Values at Center of Disk
-Suppose that $$f(z)$$ and $$g(z)$$ are analytic for $$\vert z-z_0\vert  < r$$. If $$f^{(k)(z_0)}= g^{(k)}(z_0)$$ for $$k \geq 0$$, then $$f(z) = g(z)$$ for $$\vert z-z_0\vert <r$$
+Suppose that $$f(z)$$ and $$g(z)$$ are analytic for $$\vert  z-z_0\vert   < r$$. If $$f^{(k)(z_0)}= g^{(k)}(z_0)$$ for $$k \geq 0$$, then $$f(z) = g(z)$$ for $$\vert  z-z_0\vert  <r$$
 
 ### Radius of Convergence is Distance to Nearest Singularity
 
-Suppose that $$f(z)$$ is analytic at $$z_0$$, with power series expansion $$f(z) = \sum a_k (z-z_0)^k$$ centered at $$z_0$$. Then the radius of convergence of the power series is the largest number $$R$$ such that $$f(z)$$ extends to be analytic on the disk $$\{\vert z-z_0\vert  < R\}$$.
+Suppose that $$f(z)$$ is analytic at $$z_0$$, with power series expansion $$f(z) = \sum a_k (z-z_0)^k$$ centered at $$z_0$$. Then the radius of convergence of the power series is the largest number $$R$$ such that $$f(z)$$ extends to be analytic on the disk $$\{\vert  z-z_0\vert   < R\}$$.
 
 
 ## 5.5 - Power Series Expansion at Infinity
@@ -820,15 +823,15 @@ $$f(z)$$ is analytic at $$z= \infty$$ if the fnction $$g(w) = f(1/w)$$ is analyt
 
 If $$g(w)$$ has power series expansion:
 
-$$ g(w) = \sum_{k=0}^\infty b_k w^k \qquad \vert w\vert < p\vert $$
+$$ g(w) = \sum_{k=0}^\infty b_k w^k \qquad \vert  w\vert  < p\vert  $$
 
 Then $$f(z)$$ is defined:
 
-$$f(z) = \sum_{k=0}^\infty \frac{b_k}{z^k} \qquad \vert z\vert > \frac{1}{p}$$
+$$f(z) = \sum_{k=0}^\infty \frac{b_k}{z^k} \qquad \vert  z\vert  > \frac{1}{p}$$
 
 Coefficients given by formula:
 
-$$b_k = \frac{1}{2 \pi i} \int_{\vert z\vert =r} f(z)z^{k-1}dz $$
+$$b_k = \frac{1}{2 \pi i} \int_{\vert  z\vert  =r} f(z)z^{k-1}dz $$
 
 ## 5.6 - Manipulation of Power Series
 
@@ -882,23 +885,23 @@ Let $$D$$ be a domain, and let $$E$$ be a subset of $$D$$ that has a nonisolated
 Laurent Decomposition splits a function analytic in an annulus into the sum of a function analytic inside the annulus and a function analytic outside the annulus.
 
 ### Laurent Decomposition Theorem
-Suppose $$0 \leq \rho < \sigma \leq +\infty$$, and suppose $$f(z)$$ is analytic for $$p < \vert z-z_0\vert < \sigma$$. Then $$f(z)$$ can be decomposed as a sum
+Suppose $$0 \leq \rho < \sigma \leq +\infty$$, and suppose $$f(z)$$ is analytic for $$p < \vert  z-z_0\vert  < \sigma$$. Then $$f(z)$$ can be decomposed as a sum
 
 $$ f(z) = f_0(z) + f_1(z)$$
-where $$f_0(z)$$ is analytic for $$\vert z-z_0\vert < \sigma$$, and $$f_1(z)$$ is analytic for $$\vert z-z_0\vert >\rho$$ and at $$\infty$$. If we normalize the decomposition so that $$f_1(\infty)=0$$, then the decomposition is unique.
+where $$f_0(z)$$ is analytic for $$\vert  z-z_0\vert  < \sigma$$, and $$f_1(z)$$ is analytic for $$\vert  z-z_0\vert  >\rho$$ and at $$\infty$$. If we normalize the decomposition so that $$f_1(\infty)=0$$, then the decomposition is unique.
 
 ### Special Cases
 
-If $$f(z)$$ is analytic for $$\vert z-z_0\vert < \sigma$$, or $$\vert z-z_0\vert >\rho$$, then the Laurent decomposition becomes the function itself, along with $$f_1(z)=0$$, or $$f_0(z)=0$$, respectively.
+If $$f(z)$$ is analytic for $$\vert  z-z_0\vert  < \sigma$$, or $$\vert  z-z_0\vert  >\rho$$, then the Laurent decomposition becomes the function itself, along with $$f_1(z)=0$$, or $$f_0(z)=0$$, respectively.
 
 ### Laurent Series Expansion
-Suppose $$0 \leq \rho < \sigma \leq \infty$$, and suppose $$f(z)$$ is analytic for $$\rho < \vert z-z_0\vert  < \sigma$$. Then $$f(z)$$ has a Laurent expansion
+Suppose $$0 \leq \rho < \sigma \leq \infty$$, and suppose $$f(z)$$ is analytic for $$\rho < \vert  z-z_0\vert   < \sigma$$. Then $$f(z)$$ has a Laurent expansion
 
-$$f(z) = \sum\limits_{k=-\infty}^\infty a_k(z-z_0)^k, \qquad \rho < \vert z-z_0\vert  < \sigma$$
+$$f(z) = \sum\limits_{k=-\infty}^\infty a_k(z-z_0)^k, \qquad \rho < \vert  z-z_0\vert   < \sigma$$
 
-that converges absolutely at each point of the annulus, and that converges uniformly on each subannulus $$r \leq \vert z-z_0\vert  \leq s$$, where $$p<r<s<\sigma$$. The coefficients are uniquely determined by $$f(z)$$, and they are given by
+that converges absolutely at each point of the annulus, and that converges uniformly on each subannulus $$r \leq \vert  z-z_0\vert   \leq s$$, where $$p<r<s<\sigma$$. The coefficients are uniquely determined by $$f(z)$$, and they are given by
 
-$$ a_n = \frac{1}{2\pi i} \oint_{\vert z-z_0\vert =r} \frac{f(z)}{(z-z_0)^{n+1}}dz, \qquad -\infty < n < \infty$$
+$$ a_n = \frac{1}{2\pi i} \oint_{\vert  z-z_0\vert  =r} \frac{f(z)}{(z-z_0)^{n+1}}dz, \qquad -\infty < n < \infty$$
 
 for any fixed $$r$$, $$\rho< r < \sigma$$.
 
@@ -951,7 +954,7 @@ Let $$z_0$$ be an isolated singularity of $$f(z)$$. Then $$z_0$$ is a pole of $$
 A function $$f$$ is meromorphic on a domain $$D$$ if $$f$$ is analytic on $$D$$ except at isolated singularities, each of which is a pole. Sums, products, and quotients of meromorphic.
 
 ### Pole Theorem 3
-Let $$z_0$$ be an isolated singularity of $$f(z)$$. Then $$z_0$$ is a pole if and only if $$\vert f(z)\vert  \to \infty$$ as $$z \to z_0$$ .
+Let $$z_0$$ be an isolated singularity of $$f(z)$$. Then $$z_0$$ is a pole if and only if $$\vert  f(z)\vert   \to \infty$$ as $$z \to z_0$$ .
 
 ### Essential Singularities
 An isolated singularity of $$f(z)$$ at $$z_0$$ is an essential singularity if $$a_k \neq 0$$ for infinitely many $$k<0$$.
@@ -963,7 +966,7 @@ Suppose $$z_0$$ is an essential isolated singularity of $$f(z)$$. Then for every
 
 ## 6.3 - Isolated Singularity at Infinity
 
-$$f(z)$$ has an isolated singularity at $$\infty$$ if $$f(z)$$ is analytic outside some bounded set, that is, there is $$R > 0$$ such that $$f(z)$$ is analytic for $$\vert z\vert >R$$.
+$$f(z)$$ has an isolated singularity at $$\infty$$ if $$f(z)$$ is analytic outside some bounded set, that is, there is $$R > 0$$ such that $$f(z)$$ is analytic for $$\vert  z\vert  >R$$.
 
 $$f(z)$$ has an isolated singularity at $$\infty$$ if and only if $$g(w) = f(1/w)$$ has an isolated singularity at 0.
 
@@ -1007,11 +1010,11 @@ TODO: Figure this out.
 
 Suppose $$z_0$$ is an isolated singularity of $$f(z)$$ and that $$f(z)$$ has Laurent Series
 
-$$f(z) = \sum_{n= -\infty}^\infty a_n(z-z_0)^n, \qquad 0< \vert z-z_0\vert < p $$
+$$f(z) = \sum_{n= -\infty}^\infty a_n(z-z_0)^n, \qquad 0< \vert  z-z_0\vert  < p $$
 
 We define the residue of $$f(z)$$ at $$z_0$$ to be the coefficient $$a_{-1}$$ of $$1/(z-z_0)$$ in this laurent expansion,
 
-$$\text{Res}[f(z), z_0] = a_{-1} = \frac{1}{2 \pi i} \oint_{\vert z-z_0\vert =r} f(z) dz, $$
+$$\text{Res}[f(z), z_0] = a_{-1} = \frac{1}{2 \pi i} \oint_{\vert  z-z_0\vert  =r} f(z) dz, $$
 
 where $$r$$ is any fixed radius satisfying $$0<r<p.$$
 
